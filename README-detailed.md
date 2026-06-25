@@ -486,9 +486,7 @@ main.pdf
 
 ## 授權
 
-本模板採用 [MIT License](LICENSE)。正式授權條款以根目錄的 `LICENSE` 檔為準，README 只提供概略說明。
-
-你可以依 MIT License 自由使用、複製、修改與散布本模板；使用時請保留原授權與著作權聲明。
+本模板採用 [MIT License](LICENSE)。
 
 ## 常見問題
 
