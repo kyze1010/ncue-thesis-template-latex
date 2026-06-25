@@ -59,7 +59,9 @@ latexmk -xelatex main.tex
 
 ## 授權
 
-本模板採用 [MIT License](LICENSE)。任何人都可以使用、修改、散布或改作，但請保留授權文字。
+本模板採用 [MIT License](LICENSE)。正式授權條款以根目錄的 `LICENSE` 檔為準。
+
+簡單說：任何人都可以使用、修改、散布、改作或商業使用，但請保留授權文字。
 
 ## 出問題怎麼辦
 
