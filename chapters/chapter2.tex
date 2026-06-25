@@ -1,0 +1,71 @@
+\chapter{文獻探討}
+
+本章整理與大型語言模型評估、自動評審及人工複核相關的研究，並示範本範本的章節、圖表與交叉引用格式。LLM-as-a-judge 的代表性研究可參考相關基準與評估框架~\autocite{zheng2023judging,dubois2024alpacafarm}。
+
+\section{大型語言模型評估}
+
+\levelone{評估面向}
+\leveltwo{回答品質}
+\levelthree{正確性與完整性}
+回答品質可由正確性、完整性、相關性、清晰度與可操作性等面向衡量。表~\ref{tab:rubric} 示範表格標題置於表格上方，且依章編號。
+
+\begin{table}[H]
+  \caption{五面向評分規準示例}
+  \label{tab:rubric}
+  \centering
+  \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{0.18\textwidth} X}
+    \toprule
+    面向 & 說明 \\
+    \midrule
+    正確性 & 內容是否符合可驗證事實與題目要求。 \\
+    完整性 & 是否涵蓋回答問題所需的重要資訊。 \\
+    清晰度 & 表達是否連貫、易讀且結構合理。 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\levelone{評審方式}
+\leveltwo{盲化評分}
+\levelthree{模型來源隱藏}
+圖~\ref{fig:workflow} 示範圖題置於圖形下方。
+
+\begin{figure}[H]
+  \centering
+  \fbox{\parbox[c][4.2cm][c]{0.78\textwidth}{\centering
+    題目與各實驗組回答\\[6pt]
+    $\downarrow$\\[6pt]
+    Blind label\\[6pt]
+    $\downarrow$\\[6pt]
+    LLM judge 五面向評分}}
+  \caption{盲化評估流程示意圖}
+  \label{fig:workflow}
+\end{figure}
+
+\section{評分一致性}
+
+\levelone{人工複核}
+\leveltwo{抽樣策略}
+\levelthree{一致性檢查}
+可抽樣部分題目進行人工複核，並比較人工評分與自動評分的差異。表~\ref{tab:agreement} 提供第二個表格範例。
+
+\begin{table}[H]
+  \caption{人工複核紀錄示例}
+  \label{tab:agreement}
+  \centering
+  \begin{tabular}{ccc}
+    \toprule
+    題號 & LLM 評分 & 人工評分 \\
+    \midrule
+    Q01 & 4 & 4 \\
+    Q02 & 3 & 4 \\
+    Q03 & 5 & 5 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \fbox{\rule{0pt}{3.2cm}\rule{0.72\textwidth}{0pt}}
+  \caption{結果圖示範位置}
+  \label{fig:placeholder}
+\end{figure}

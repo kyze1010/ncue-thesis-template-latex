@@ -1,0 +1,23 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+main.pdf
+
+# Local reference/source files that should not be published with the template.
+*.docx
+*.zip
+
+# OS/editor noise.
+.DS_Store
+Thumbs.db

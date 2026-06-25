@@ -1,0 +1,43 @@
+% !TeX program = xelatex
+\documentclass{ncue-thesis}
+% 若需完全仿照原 Word 範本的「不顯示頁碼」畫面：
+% \documentclass[nopagenumbers]{ncue-thesis}
+
+\input{metadata}
+
+% 參考文獻格式請依系所規定修改；此處採依引用順序排列的數字制。
+\usepackage[
+  backend=biber,
+  style=numeric,
+  sorting=none,
+  giveninits=true,
+  maxbibnames=99
+]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+% 封面不編頁碼
+\makethesiscover
+
+% 前置頁：大寫羅馬數字 I, II, III, ...
+\frontmatter
+\input{frontmatter/abstract-zh}
+\input{frontmatter/abstract-en}
+\input{frontmatter/acknowledgements}
+\makethesistoc
+\makethesislistoftables
+\makethesislistoffigures
+
+% 正文：阿拉伯數字自 1 起算
+\mainmatter
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+
+% 參考文獻與附錄
+\backmatter
+\thesisbackchapter{參考文獻}
+\printbibliography[heading=none]
+\input{backmatter/appendix}
+
+\end{document}

@@ -1,0 +1,13 @@
+* text=auto eol=lf
+
+*.tex text eol=lf
+*.cls text eol=lf
+*.md text eol=lf
+*.bib text eol=lf
+.latexmkrc text eol=lf
+
+*.docx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
