@@ -57,6 +57,10 @@ latexmk -xelatex main.tex
 
 不要用 `pdflatex`，中文字型會出問題。
 
+## 授權
+
+本模板採用 [MIT License](LICENSE)。任何人都可以使用、修改、散布或改作，但請保留授權文字。
+
 ## 出問題怎麼辦
 
 先確認：
